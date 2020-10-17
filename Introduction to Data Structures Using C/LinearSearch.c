@@ -24,6 +24,12 @@ int main(void) {
 	int integers[ARRAY_SIZE] = { 0, };
 
 	generateRandomNonNegativeIntegers(integers, ARRAY_SIZE, RANGE);
+	
+	printf("Integers: ");
+	for (int i = 0; i < ARRAY_SIZE; ++i)
+		printf("%d ", integers[i]);
+
+	puts("");
 
 	int index;
 	index = linearSearch(integers, sizeof(integers) / sizeof(int), 3);
