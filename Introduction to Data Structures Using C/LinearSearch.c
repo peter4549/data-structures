@@ -4,7 +4,7 @@
 #define ARRAY_SIZE 8
 #define RANGE 8
 
-void generateRandomNonNegativeIntegers(int integers[], int length, int range) {
+void generateRandomIntegers(int integers[], int length, int range) {
 	srand((int) time(NULL));
 
 	for (int i = 0; i < length; ++i)
@@ -23,7 +23,7 @@ int linearSearch(int integers[], int length, int target) {
 int main(void) {
 	int integers[ARRAY_SIZE] = { 0, };
 
-	generateRandomNonNegativeIntegers(integers, ARRAY_SIZE, RANGE);
+	generateRandomIntegers(integers, ARRAY_SIZE, RANGE);
 	
 	printf("Integers: ");
 	for (int i = 0; i < ARRAY_SIZE; ++i)
