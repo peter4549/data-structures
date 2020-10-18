@@ -34,6 +34,8 @@ int main(void) {
 	int index;
 	index = linearSearch(integers, sizeof(integers) / sizeof(int), 3);
 
+	printf("Target: %d \n", 3);
+	
 	if (index == -1)
 		printf("Search failure. \n");
 	else
@@ -41,6 +43,8 @@ int main(void) {
 
 	index = linearSearch(integers, sizeof(integers) / sizeof(int), 7);
 
+	printf("Target: %d \n", 7);
+	
 	if (index == -1)
 		printf("Search failure. \n");
 	else
