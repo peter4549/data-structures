@@ -32,6 +32,7 @@ int main(void) {
 	puts("");
 
 	int index;
+	
 	index = linearSearch(integers, sizeof(integers) / sizeof(int), 3);
 
 	printf("Target: %d \n", 3);
