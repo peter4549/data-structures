@@ -4,16 +4,16 @@
 int main(void)
 {
 	Heap heap;
-	HeapInit(&heap);		// ÈüÀÇ ÃÊ±âÈ­
+	HeapInit(&heap);		// í™ì˜ ì´ˆê¸°í™”
 
-	HInsert(&heap, 'A', 1);	// ¹®ÀÚ 'A'¸¦ ÃÖ°íÀÇ ¿ì¼±¼øÀ§·Î ÀúÀå
-	HInsert(&heap, 'B', 2);	// ¹®ÀÚ 'B'¸¦ µÎ ¹øÂ° ¿ì¼±¼øÀ§·Î ÀúÀå
-	HInsert(&heap, 'C', 3);	// ¹®ÀÚ 'C'¸¦ ¼¼ ¹øÂ° ¿ì¼±¼øÀ§·Î ÀúÀå
+	HInsert(&heap, 'A', 1);		// ë¬¸ì 'A'ë¥¼ ìµœê³ ì˜ ìš°ì„ ìˆœìœ„ë¡œ ì €ì¥
+	HInsert(&heap, 'B', 2);		// ë¬¸ì 'B'ë¥¼ ë‘ ë²ˆì§¸ ìš°ì„ ìˆœìœ„ë¡œ ì €ì¥
+	HInsert(&heap, 'C', 3);		// ë¬¸ì 'C'ë¥¼ ì„¸ ë²ˆì§¸ ìš°ì„ ìˆœìœ„ë¡œ ì €ì¥
 	printf("%c \n", HDelete(&heap));
 
-	HInsert(&heap, 'A', 1);	// ¹®ÀÚ 'A' ÇÑ ¹ø ´õ ÀúÀå!
-	HInsert(&heap, 'B', 2);	// ¹®ÀÚ 'B' ÇÑ ¹ø ´õ ÀúÀå!
-	HInsert(&heap, 'C', 3);	// ¹®ÀÚ 'C' ÇÑ ¹ø ´õ ÀúÀå!
+	HInsert(&heap, 'A', 1);		// ë¬¸ì 'A' í•œ ë²ˆ ë” ì €ì¥!
+	HInsert(&heap, 'B', 2);		// ë¬¸ì 'B' í•œ ë²ˆ ë” ì €ì¥!
+	HInsert(&heap, 'C', 3);		// ë¬¸ì 'C' í•œ ë²ˆ ë” ì €ì¥!
 	printf("%c \n", HDelete(&heap));
 
 	while (!HIsEmpty(&heap))
