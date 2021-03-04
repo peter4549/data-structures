@@ -8,3 +8,4 @@
 
 * 반사적(Reflexive): $a \in S$인 모든 항목 $a$에 대해 $aRa$는 참이다.
 * 대칭적(Symmetric): $a, b \in S$인 임의의 두 항목 $a, b$에 대해 $aRb$가 참이라면 $bRa$도 참이다.
+* 추이적(Transitive): $a, b, c \in S$인 임의의 세 항목 $a, b, c$에 대해 $aRb$와 $bRc$가 참이라면 $aRc$도 참이다.
