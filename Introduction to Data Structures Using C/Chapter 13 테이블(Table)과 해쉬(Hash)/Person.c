@@ -1,5 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -12,9 +10,9 @@ int GetSSN(Person * p)
 
 void ShowPerInfo(Person * p)
 {
-	printf("�ֹε�Ϲ�ȣ: %d \n", p->ssn);
-	printf("�̸�: %s \n", p->name);
-	printf("�ּ�: %s \n\n", p->addr);
+	printf("ÁÖ¹Îµî·Ï¹øÈ£: %d \n", p->ssn);
+	printf("ÀÌ¸§: %s \n", p->name);
+	printf("ÁÖ¼Ò: %s \n\n", p->addr);
 }
 
 Person * MakePersonData(int ssn, char * name, char * addr)
